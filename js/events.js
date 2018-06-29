@@ -11,8 +11,6 @@ function frameIt() {
     $('img').addClass('tasty')
   })
 }
-;
-}
 
 function pressIt(){
   console.log('press');

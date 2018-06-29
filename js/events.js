@@ -6,12 +6,10 @@ function getIt(){
   });
 }
 
-function frameIt(){
-  console.log('frame');
-  $("img").addClass("tasty");
-  $('img').on('load', function(){
-     $('img').addClass('tasty');
-  });
+function frameIt() {
+  $('img').on('load', function() {
+    $('img').addClass('tasty')
+  })
 }
 
 function pressIt(){
@@ -37,3 +35,5 @@ $(document).ready(function(){
   pressIt();
   submitIt();
 });
+
+

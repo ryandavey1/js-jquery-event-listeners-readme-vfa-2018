@@ -6,12 +6,12 @@ function getIt(){
   });
 }
 
-function frameIt(){
-  console.log('frame');
-  $("img").addClass("tasty");
-  $('img').on('load', function(){
-     $('img').addClass('tasty');
-  });
+function frameIt() {
+  $('img').on('load', function() {
+    $('img').addClass('tasty')
+  })
+}
+;
 }
 
 function pressIt(){
@@ -41,17 +41,8 @@ $(document).ready(function(){
 
 
 
-function getIt() {
-  $('p').on('click', function() {
-    alert('hey!')
-  })
-}
 
-function frameIt() {
-  $('img').on('load', function() {
-    $('img').addClass('tasty')
-  })
-}
+
 
 function pressIt() {
   $('#typing').on('keydown', function(e) {
